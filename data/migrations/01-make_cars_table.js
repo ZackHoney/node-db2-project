@@ -6,6 +6,16 @@ exports.up = function (knex) {
     tbl.string('vin', 17).notNullable().unique()
 
     tbl.string('make', 123).notNullable()
+
+    tbl.string('model', 123).notNullable()
+
+    tbl.numeric('mileage').unsigned().notNullable()
+
+    tbl.string('title', 123)
+
+    tbl.string('transmission', 123)
+
+
   })
 };
 
