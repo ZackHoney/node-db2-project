@@ -6,7 +6,7 @@ const cars = [
         model: 'Civic',
         mileage: 67500,
         title: 'clean',
-        trasmission: 'manual'
+        transmission: 'manual'
     },
     {
         vin: '1111111111112',
@@ -14,7 +14,7 @@ const cars = [
         model: 'Accord',
         mileage: 88500,
         title: 'salvage',
-        trasmission: 'automatic'
+        transmission: 'automatic'
     },
     {
         vin: '1111111111113',
