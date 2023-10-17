@@ -8,7 +8,7 @@ router.get('/', async (req, res, next) => {
 })
 
 router.get('/:id', async (req, res, next) => {
-    res.json('getting car with inputed id')
+    res.json(`getting car with id: ${req.params.id}`)
 })
 
 router.post('/', async (req, res, next) => {
