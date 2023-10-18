@@ -5,8 +5,7 @@ const {
     checkCarId,
     checkCarPayload,
     checkVinNumberUnique,
-    checkVinNumberValid
-
+    checkVinNumberValid, 
 } = require('./cars-middleware')
 const router = express.Router()
 
@@ -28,7 +27,12 @@ router.post('/',
     checkVinNumberUnique,
     checkVinNumberValid,
     async (req, res, next) => {// eslint-disable-line
-        res.json('hello')
+       try {
+        const car = await Car.create(req.body)
+        res.json(car)
+       } catch (err) {
+        next(err)
+       }
     })
 
 
